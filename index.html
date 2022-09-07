@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Gaz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h3>Calcul: [mc] * Puterea calorifică superioară (Pcs).</h3>
+        <h3>Pcs 05.09.2022: <span>10.396</span></h3>
+        <h3>Pret per 1kwh 05.09.2022: <span>0.23725</span> lei</h3>
+        <h3>Categorie consum 05.09.2022: C 1</h3>
+      </div>
+
+      <div class="errors"></div>
+      <div class="wrapper">
+        <h1 class="title">Calculator gaz:</h1>
+        <div class="box">
+          <label>Mc: </label>
+          <input type="number" placeholder="100" class="mcInput" />
+        </div>
+        <div class="box">
+          <label>Pcs (current): </label>
+          <input
+            type="number"
+            class="pcsInput"
+            placeholder="10,396 kwh (Pcs 05.09.2022)"
+          />
+        </div>
+        <div class="box">
+          <label>Pret 1 Kwh (fara TVA): </label>
+          <input
+            type="number"
+            class="pret1Kwh"
+            placeholder="0,23725 lei (05.09.2022)"
+          />
+        </div>
+        <button class="calculeaza">Calculeaza</button>
+        <div class="total-box">
+          <h2 class="totalKwh">Total Kwh:</h2>
+          <h2 class="totalFaraTva">Total lei (fara TVA):</h2>
+          <h2 class="tva">Valoare TVA 19%:</h2>
+          <h2 class="totalFactura">Total Factura:</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
