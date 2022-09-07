@@ -91,11 +91,6 @@ input {
   color: rgb(255, 204, 0);
 }
 
-@media (max-height: 920px) {
-  .container {
-    height: 140vh;
-  }
-}
 @media (max-width: 650px) {
   .container {
     font-size: 1.2rem;
@@ -114,6 +109,9 @@ input {
 }
 
 @media (max-width: 430px) {
+  input {
+    padding-inline: 0.5rem;
+  }
   .container {
     font-size: 1.1rem;
   }
@@ -127,5 +125,11 @@ input {
   .calculeaza {
     padding: 1rem 1.5rem;
     font-size: 1.5rem;
+  }
+}
+
+@media (max-height: 920px) {
+  .container {
+    height: 150vh;
   }
 }
